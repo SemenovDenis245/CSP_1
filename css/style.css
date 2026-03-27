@@ -1,0 +1,417 @@
+/* Импортируем шрифт с Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Базовые стили */
+body {
+    margin: 0;
+    font-family: Montserrat;
+    background-color: rgb(240, 244, 248);
+    color: rgb(30, 30, 30); 
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column
+}
+
+.container { 
+    width: 1100px;
+    margin: 0 auto; /* Выравниваем по центру */
+    flex: 1;
+}
+
+/* Шапка */
+.site-header {
+    background-color: rgb(25, 25, 25);
+    padding: 20px 0; /* Поля вокруг текста */
+}
+
+.site-title {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 0 0 15px 0;
+}
+
+/* Меню */
+.menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.menu-item a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.menu-item a:hover {
+    color: rgba(255, 255, 255, 0.5);
+    transition: ease-in-out 0.3s;
+}
+
+/* Общие заголовки */
+
+.section-title {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.catalog-text,
+.hero-text {
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Каталог */
+
+.hero-text a {
+    color: rgb(30, 30, 30);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero-text a:hover {
+    color: rgba(30, 30, 30, 0.5);
+    transition: ease-in-out 0.3s;
+}
+
+.catalog-page {
+    padding-bottom: 40px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap; /* Перенос на новую строку */
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.product {
+    width: 350px;
+}
+
+.product-card {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(210, 210, 210);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.product-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+    background-color: rgb(235, 235, 235);
+    justify-self: center;
+}
+
+.product-content {
+    padding: 20px;
+}
+
+.product-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.product-category {
+    margin: 8px 0;
+    font-size: 15px;
+    color: rgb(110, 110, 110);
+}
+
+.product-price {
+    margin: 0;
+    margin-top: 16px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(30, 30, 30);
+}
+
+.product-text {
+    margin: 12px 0 18px 0;
+    font-size: 15px;
+    line-height: 22px;
+    color: rgb(70, 70, 70);
+}
+
+.product-link {
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: rgb(30, 30 ,30);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.product-link:hover {
+    background-color: rgba(30, 30, 30, 0.5);
+    transition: ease-in-out 0.3s;
+}
+
+/* Главная */
+
+.hero {
+    padding: 40px 0 60px 0;
+}
+
+/* Страница товара */
+
+.product-page {
+    padding-bottom: 40px;
+}
+
+.product-layout {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.product-image-block {
+    width: 420px;
+}
+
+.product-page-image {
+    height: 420px;
+}
+
+.product-info-block {
+    width: 600px;
+}
+
+.description-block {
+    margin-top: 30px;
+}
+
+/* Заголовки страницы товаров */
+
+.product-heading {
+    font-size: 18px;
+    font-weight: 400;
+    background-color: rgb(214, 214, 214);
+    padding: 8px 12px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+/* Краткое описание */
+
+.short-description {
+    color: rgb(80, 80, 80);
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+    margin-bottom: 25px;
+}
+
+/* Подробное описание */
+
+.full-description {
+    color: rgb(60, 60, 60);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+/* Характеристики */
+
+.features-list {
+    margin: 0;
+    padding-left: 30px;
+    color: rgb(20, 70, 120);
+    font-size: 16px;
+    line-height: 24px;
+    list-style: none;
+}
+
+.features-list li {
+    position: relative;
+    padding-left: 25px;
+}
+
+.features-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6px;
+
+    width: 12px;
+    height: 12px;
+    
+    background-image: url('../img/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Футер */
+
+.site-footer {
+    background-color: rgb(25, 25, 25);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.site-header .container {
+    position: relative;
+}
+
+.header-cart {
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+.cart-button {
+    padding: 10px 16px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(30, 30, 30);
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.cart-button:hover {
+    background-color: rgb(230, 230, 230);
+    transition: ease-in-out 0.3s;
+}
+
+.cart-dropdown {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 320px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(30, 30, 30);
+    border: 1px solid rgb(210, 210, 210);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    padding: 20px;
+    z-index: 1000;
+}
+
+.cart-dropdown.active {
+    display: block;
+}
+
+.cart-title {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.cart-empty {
+    margin: 0;
+    color: rgb(100, 100, 100);
+}
+
+.cart-item {
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid rgb(220, 220, 220);
+}
+
+.cart-item-name {
+    margin: 0 0 6px 0;
+    font-weight: 600;
+}
+
+.cart-item-price {
+    margin: 0 0 10px 0;
+    color: rgb(70, 70, 70);
+}
+
+.remove-button {
+    padding: 8px 12px;
+    background-color: rgb(180, 40, 40);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: Montserrat;
+}
+
+.remove-button:hover {
+    background-color: rgb(140, 30, 30);
+    transition: ease-in-out 0.3s;
+}
+
+.cart-total {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.pay-button {
+    width: 100%;
+    padding: 10px 0;
+    background-color: rgb(30, 30, 30);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 6px;
+    font-family: Montserrat;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.pay-button:hover {
+    background-color: rgba(30, 30, 30, 0.7);
+    transition: ease-in-out 0.3s;
+}
+
+.add-to-cart {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 10px 18px;
+    background-color: rgb(214, 214, 214);
+    color: rgb(30, 30, 30);
+    border: none;
+    border-radius: 6px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: rgb(190, 190, 190);
+    transition: ease-in-out 0.3s;
+}
+
+.catalog-filter {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.catalog-filter label {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.catalog-filter select {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 6px;
+    font-family: Montserrat;
+}

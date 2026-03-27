@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог - WkilaStore</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="site-title">WkilaStore</h1>
+            
+            <nav class="site-nav">
+                <ul class="menu">
+                    <li class="menu-item"><a href="index.html">Главная</a></li>
+                    <li class="menu-item"><a href="catalog.html">Каталог</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-cart">
+                <button class="cart-button" id="cartToggle">
+                    Корзина (<span id="cartCount">0</span>)
+                </button>
+            
+                <div class="cart-dropdown" id="cartDropdown">
+                    <h3 class="cart-title">Корзина</h3>
+                    <div id="cartItems">
+                        <p class="cart-empty">Корзина пуста</p>
+                    </div>
+                    <p id="cartTotal" class="cart-total">Итого: 0 ₽</p>
+                    <button id="payButton" class="pay-button">Оплатить</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="catalog-page">
+            <h2 class="section-title">Каталог товаров</h2>
+
+            <div class="catalog-controls">
+                <label>Фильтр:</label>
+                <select id="categoryFilter">
+                    <option value="all">Все</option>
+                    <option value="iphone">iPhone</option>
+                    <option value="ipad">iPad</option>
+                    <option value="macbook">MacBook</option>
+                </select>
+            </div>
+
+            <p class="catalog-text">В каталоге представлены популярные устройства Apple: iPhone, iPad и MacBook.</p>
+
+            <div class="products">
+                <article class="product" 
+                data-category="iphone" 
+                data-price="55990"
+                data-name="iPhone 15">
+                    <div class="product-card">
+                        <img src="img/iphone15.jpg" alt="iPhone15" class="product-image">
+                        <div class="product-content">
+                            <h3 class="product-title">iPhone 15</h3>
+                            <p class="product-category">Категория: iPhone</p>
+                            <p class="product-price">Цена: 55 990 ₽</p>
+                            <p class="product-text">
+                                Современный смартфон Apple с ярким экраном,
+                                хорошей камерой и высокой производительностью.
+                            </p>
+                            <a class="product-link" href="product-iphone15.html">Подробнее</a>
+                        </div>
+                    </div>
+                    <button class="add-to-cart">В корзину</button>
+                </article>
+
+                <article class="product" 
+                data-category="iphone" 
+                data-price="77990"
+                data-name="iPhone 15 Pro">
+                    <div class="product-card">
+                        <img class="product-image" src="img/iphone15pro.jpg" alt="iPhone 15 Pro">
+                        <div class="product-content">
+                            <h3 class="product-title">iPhone 15 Pro</h3>
+                            <p class="product-category">Категория: iPhone</p>
+                            <p class="product-price">Цена: 77 990 ₽</p>
+                            <p class="product-text">
+                                Премиальная модель с улучшенной камерой,
+                                титановым корпусом и мощным процессором.
+                            </p>
+                            <a class="product-link" href="product-iphone15pro.html">Подробнее</a>
+                        </div>
+                    </div>
+                    <button class="add-to-cart">В корзину</button>
+                </article>
+
+                <article class="product" 
+                data-category="ipad" 
+                data-price="71990"
+                data-name="iPad Air 13">
+                    <div class="product-card">
+                        <img class="product-image" src="img/ipadair13.jpg" alt="iPad Air 13">
+                        <div class="product-content">
+                            <h3 class="product-title">iPad Air 13</h3>
+                            <p class="product-category">Категория: iPad</p>
+                            <p class="product-price">Цена: 71 990 ₽</p>
+                            <p class="product-text">
+                                Удобный планшет для учёбы, фильмов,
+                                общения и работы с документами.
+                            </p>
+                            <a class="product-link" href="product-ipadair13.html">Подробнее</a>
+                        </div>
+                    </div>
+                    <button class="add-to-cart">В корзину</button>
+                </article>
+
+                <article class="product" 
+                data-category="ipad" 
+                data-price="113990"
+                data-name="iPad Pro 13">
+                    <div class="product-card">
+                        <img class="product-image" src="img/ipadpro13.jpg" alt="iPad Air">
+                        <div class="product-content">
+                            <h3 class="product-title">iPad Pro 13</h3>
+                            <p class="product-category">Категория: iPad</p>
+                            <p class="product-price">Цена: 113 990 ₽</p>
+                            <p class="product-text">
+                                Лёгкий и производительный планшет для
+                                творчества, работы и повседневного использования.
+                            </p>
+                            <a class="product-link" href="product-ipadpro13.html">Подробнее</a>
+                        </div>
+                    </div>
+                    <button class="add-to-cart">В корзину</button>
+                </article>
+
+                <article class="product" 
+                data-category="macbook" 
+                data-price="87990"
+                data-name="MacBook Air 13">
+                    <div class="product-card">
+                        <img class="product-image" src="img/macbookair13.jpg" alt="MacBook Air 13">
+                        <div class="product-content">
+                            <h3 class="product-title">MacBook Air 13</h3>
+                            <p class="product-category">Категория: MacBook</p>
+                            <p class="product-price">Цена: 87 990 ₽</p>
+                            <p class="product-text">
+                                Тонкий и лёгкий ноутбук Apple для учёбы,
+                                работы и ежедневных задач.
+                            </p>
+                            <a class="product-link" href="product-macbookair13.html">Подробнее</a>
+                        </div>
+                    </div>
+                    <button class="add-to-cart">В корзину</button>
+                </article>
+
+                <article class="product" 
+                data-category="macbook" 
+                data-price="185990"
+                data-name="MacBook Pro 14">
+                    <div class="product-card">
+                        <img class="product-image" src="img/macbookpro14.jpg" alt="MacBook Pro 14">
+                        <div class="product-content">
+                            <h3 class="product-title">MacBook Pro 14</h3>
+                            <p class="product-category">Категория: MacBook</p>
+                            <p class="product-price">Цена: 185 990 ₽</p>
+                            <p class="product-text">
+                                Мощный ноутбук для программирования,
+                                дизайна, монтажа и профессиональной работы.
+                            </p>
+                            <a class="product-link" href="product-macbookpro14.html">Подробнее</a>
+                        </div>
+                    </div>
+                    <button class="add-to-cart">В корзину</button>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 WkilaStore</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

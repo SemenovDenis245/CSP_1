@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>MacBook Pro 14 - Apple Store</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="site-title">WkilaStore</h1>
+            
+            <nav class="site-nav">
+                <ul class="menu">
+                    <li class="menu-item"><a href="index.html">Главная</a></li>
+                    <li class="menu-item"><a href="catalog.html">Каталог</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-cart">
+                <button class="cart-button" id="cartToggle">
+                    Корзина (<span id="cartCount">0</span>)
+                </button>
+            
+                <div class="cart-dropdown" id="cartDropdown">
+                    <h3 class="cart-title">Корзина</h3>
+                    <div id="cartItems">
+                        <p class="cart-empty">Корзина пуста</p>
+                    </div>
+                    <p id="cartTotal" class="cart-total">Итого: 0 ₽</p>
+                    <button id="payButton" class="pay-button">Оплатить</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="product-page">
+            <h2 class="section-title">MacBook Pro 14</h2>
+
+            <div class="product-layout">
+                <div class="product-image-block">
+                    <img class="product-page-image" src="img/macbookpro14.jpg" alt="MacBook Pro 14">
+                </div>
+
+                <div class="product-info-block">
+                    <h3 class="product-heading">Краткое описание товара</h3>
+                    <p class="short-description">
+                        MacBook Pro 14 — мощный ноутбук для профессиональной 
+                        работы, программирования и обработки данных.
+                    </p>
+
+                    <h3 class="product-heading">Характеристики</h3>
+                    <ul class="features-list">
+                        <li>Экран: 14.2"</li>
+                        <li>Память: 1 ТБ</li>
+                        <li>Оперативная память: 24 Гб</li>
+                        <li>Процессор: M5</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="description-block">
+                <h3 class="product-heading">Подробное описание товара</h3>
+
+                <p class="full-description">
+                    MacBook Pro 14 предназначен для выполнения сложных задач, 
+                    таких как программирование, монтаж видео и работа с графикой. 
+                    Он оснащён мощным процессором и качественным дисплеем, который 
+                    обеспечивает точную цветопередачу.
+                </p>
+
+                <p class="full-description">
+                    Ноутбук демонстрирует высокую производительность и стабильность 
+                    работы даже при высокой нагрузке. Это делает его отличным выбором для 
+                    специалистов и студентов технических направлений.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 WkilaStore</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
